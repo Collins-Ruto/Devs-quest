@@ -1,0 +1,90 @@
+.calc-page {
+    border: 1px solid;
+    justify-content:center;
+    background-color: rgb(143, 142, 142);
+    margin: auto auto auto 10rem;
+    justify-content: center;
+}
+.calc-margin {
+    max-width: 28rem;
+    margin: 0 auto;
+    padding:.6rem .4rem;
+    border-radius: 1rem;
+}
+.calc-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    margin: 0 auto;
+    gap: .3rem;
+    max-width: 26rem;
+    padding: .5rem;
+}
+.input-disp {
+    max-width: 26rem;
+    width: 95%;
+    height:3rem;
+    margin: 1rem auto;
+    border-radius: .3rem;
+    background: rgb(116, 113, 113);
+    overflow: hidden;
+    padding-top:.4rem;
+    font-size: 1.8rem
+}
+.disp1{
+    text-align:right;
+    padding-right:1rem;
+    background:transparent;
+}
+.input-field input {
+    width: 95%;
+    max-width:26rem;
+    height: 3rem;
+    overflow: hidden;
+    margin: 1rem auto;
+    border: 1px solid #fff;
+    text-indent: 1rem;
+    background: rgb(116, 113, 113);
+}
+.calc-container span {
+    font-size: 3rem;    
+    background: transparent;
+    user-select:none;
+}
+.calc-page .calc-num, .calc-clr, .calc-del {
+    background: darkgreen;
+    align-items: center;
+    border-radius:.2rem;
+    padding: 1.2rem;
+    height: 5.5rem;
+}
+.calc-clr {
+    grid-column: 1 / span 2;
+}
+.calc-del {
+    grid-column: 3 / span 2;
+}
+.calc-clr, .calc-del {
+    background:rgb(114, 41, 41);
+    height: 4rem;
+    padding:.8rem;
+}
+.calc-clr span, .calc-del span{
+    font-size: 2rem;
+    user-select:none;
+}
+
+.calc-num:hover, .calc-del:hover, .calc-clr:hover {
+    cursor: pointer;
+    background: rgb(67, 138, 34);
+}
+.calc-num:active, .calc-del:active, .calc-clr:active {
+    background-color: yellow;
+
+}
+@media (max-width:600px) {
+    .calc-page {
+        margin-left: auto;
+        align-items: center;
+    }
+}

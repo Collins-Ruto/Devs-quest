@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    background-color: rgb(5, 5, 12);
+}
+
+.boxContainer {
+    max-width: 100%;
+    padding-top: 3rem;
+    margin: auto auto auto 10rem;
+    justify-content: center;
+}
+
+.boxCard {
+    max-width: 40rem;
+    margin: 0 auto;
+}
+
+.boxItem {
+    padding: 3rem;
+    width: 20%;
+    margin: .5rem;
+    border: 1px solid wheat;
+    background: rgb(12, 22, 26);
+    display: inline-block;
+    border-radius: .5rem;
+}
+.boxItem:hover {
+    transform: scale(1.03) ;
+    cursor:grab;
+}
+@media(max-width:600px) {
+    .boxContainer {
+        margin-left: auto;
+        align-items: center;
+    }
+}

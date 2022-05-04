@@ -1,0 +1,49 @@
+.bar {
+    width: 10rem;
+    position: fixed;
+    height: 100%;
+    border-right: 2px solid lightgreen;
+    padding-left: .5rem;
+}
+.bar ul {
+    margin: 2rem 0rem 0 -2rem;
+    background: transparent;
+}
+.bar li {
+    list-style: none;
+    float: left;
+    margin: .8rem auto;
+    font-family:Arial, Helvetica, sans-serif;
+    padding: .5rem 0;
+    background: transparent;
+}
+
+.bar li:hover {
+    transform: scale(1.05);
+    color: aqua;
+}
+
+.sbli {
+    color: aliceblue;
+    text-decoration: none;
+    background: transparent
+}
+
+.bar i {
+    margin-right: .8rem;
+    font-size: 1.4rem;
+    color: aqua;
+}
+
+@media  (max-width: 600px) {
+    .bar[data-visible="false"] {
+        display: none;
+    }
+    
+    .bar[data-visible="true"] {
+        display: block;
+        background: rgba(0, 0, 0, 0.726);
+        z-index: 1;
+    }
+    
+}

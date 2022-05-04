@@ -1,0 +1,132 @@
+.cardContainer {
+    height: 1020px;
+    margin: auto auto auto 10rem;
+    justify-content: center;
+}
+.cardMain {
+    background-color: rgb(21, 17, 26);
+    max-width: 20rem;
+    margin: auto;
+    border-radius: 2.5rem 1rem 2.5rem .5rem;
+    margin-bottom: 3rem;
+}
+.cardImage {
+    background-color: aliceblue;
+    width: 100%;
+    border-radius: 2.5rem 0 0 0;
+}
+.cardInfo >h1, h4, h5 {
+    margin: .3rem;
+}
+.cardInfo h1 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: underline;
+}
+.cardInfo i {
+    background-color: transparent;
+    color: #fff;
+}
+.cardButtons {
+    margin-top: 1rem;
+    padding: 0 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cardButtons> button {
+    min-width: 6rem;
+    padding: .4rem;
+    border-radius: .3rem;
+    border: 1px;
+    cursor: pointer;
+}
+
+.cardButtons> button:hover {
+    transform: scale(1.05);
+    opacity: .9;
+}
+.cardButton-1 {
+    background: rgba(22, 168, 59, 0.836);
+    color: rgb(255, 253, 253);
+    font-size: 1rem;
+}
+.cardButton-2 {
+    background: rgba(5, 118, 184, 0.822);
+    color: rgb(215, 217, 219);
+    font-size: 1rem;
+}
+
+.fa-linkdn {
+    color: rgb(7, 66, 145);
+    background-color: rgb(255, 255, 255);
+    padding: 1.3px;
+}
+
+.cardAbout {
+    padding: .5rem .2rem;
+    text-align: justify;
+}
+.cardAbout > h1 {
+    margin-bottom: -.8rem;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+.cardAbout p {
+    font-size: .94rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(161, 161, 156);
+}
+
+.cardFooter {
+    background-color: rgb(11, 11, 14);
+    margin: 0 auto;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+    border-radius: 0 0 2.5rem .5rem;
+}
+
+.cardFooter a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.social-list__link:hover {
+    opacity: .7;
+}
+
+.social-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.social-list__item {
+    margin: 0 .5em;
+    background: rgb(41, 34, 34);
+    padding: .3rem ;
+    min-width: 2rem;
+    border-radius: .2rem;
+}
+.social-list__item:hover {
+    transform: scale(1.07);
+}
+
+.social-list__link {
+    
+    font-size: 1.5rem;    
+    color: aqua !important;
+}
+
+.copyright {
+    font-size: .9rem;
+    margin: 1em 0 -.5rem 0;
+}
+
+@media (max-width:600px) {
+    .cardContainer {
+        margin-left: auto;
+        align-items: center;
+    }
+}

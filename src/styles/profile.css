@@ -1,0 +1,101 @@
+.port-cont {
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    gap: 1rem;
+    justify-content: space-evenly;
+    margin: auto auto auto 10rem;
+}
+.port-card {
+    width: 20rem;
+    border: 1px solid rgb(60, 60, 71);
+    border-radius: .5rem;
+    margin: 1rem auto;
+}
+.port-title {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 .9rem;
+    align-items: center;
+    background-color: rgb(52, 38, 66);
+    border-radius: .5rem .5rem 0 0;
+    height: 3.5rem;
+    margin-bottom: .5rem;
+}
+.port-title span {
+    text-decoration: none;
+    text-align: center;
+    height: 2.3rem;
+    padding:.5rem .6rem;
+    border-radius: .3rem;
+    background: rgb(34, 127, 163);
+}
+.port-title span:hover {
+    transform: scale(1.05);
+    border: 1px solid;
+}
+.port-title a {
+    text-decoration: none;
+    color: rgb(255, 254, 254);
+}
+.port-title i {
+    font-size: 1.5rem;
+    margin-right: .5rem;
+    background: transparent;
+}
+.port-title h3 {
+    background: transparent;
+}
+.port-card img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    text-align: justify;
+}
+.port-card h1, h2 {
+    margin: .4rem;
+    font-family: 'Lucida Sans',
+        'Lucida Sans Regular',
+        'Lucida Grande',
+        'Lucida Sans Unicode',
+        Geneva,
+        Verdana,
+        sans-serif;
+}
+.port-card p {
+    text-align: justify;
+    padding: 0 1rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(200, 233, 233);
+}
+.port-card:hover {
+    border: 1px solid gray;
+    transform: scale(1.005);
+}
+.port-card h1:hover {
+    color: rgb(182, 211, 201);
+    transform: scale(1.02);
+}
+.port-card h2:hover {
+    transform: scale(1);
+}
+
+@media (max-width: 1210px) {
+   .port-cont {
+       border: 1px solid;
+       grid-template-columns: 45% 45%;
+   }
+   .port-card {
+       width: 22rem;
+   }
+}
+@media (max-width: 900px) {
+    .port-cont {
+        grid-template-columns: 80%;
+    }
+}
+@media (max-width:600px) {
+    .port-cont {
+        margin-left: auto;
+        align-items: center;
+    }
+}
