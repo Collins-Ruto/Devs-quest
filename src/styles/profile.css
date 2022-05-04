@@ -1,22 +1,24 @@
+.tsp {background: transparent;}
 .port-cont {
     display: grid;
     grid-template-columns: 25% 25% 25%;
     gap: 1rem;
     justify-content: space-evenly;
-    margin: auto auto auto 10rem;
+    margin: 3.5rem auto auto 10rem;
 }
 .port-card {
     width: 20rem;
-    border: 1px solid rgb(60, 60, 71);
+    border: 1px solid rgba(66, 66, 143, 0.308);
     border-radius: .5rem;
     margin: 1rem auto;
+    background: rgba(4, 18, 22, 0.432);
 }
 .port-title {
     display: flex;
     justify-content: space-between;
     padding: 0 .9rem;
     align-items: center;
-    background-color: rgb(52, 38, 66);
+    background-color: rgba(38, 24, 51, 0.836);
     border-radius: .5rem .5rem 0 0;
     height: 3.5rem;
     margin-bottom: .5rem;
@@ -60,12 +62,14 @@
         Geneva,
         Verdana,
         sans-serif;
+        background: transparent;
 }
 .port-card p {
     text-align: justify;
     padding: 0 1rem;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: rgb(200, 233, 233);
+    background: transparent;
 }
 .port-card:hover {
     border: 1px solid gray;

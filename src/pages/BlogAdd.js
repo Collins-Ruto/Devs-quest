@@ -43,10 +43,10 @@ export default function BlogAdd() {
   }
 
   return (
-    <div>
+    <div className="tsp blog-add-page">
       <MainNavigation />
-      <div className="blog-add-form">
-        <div className="blog-add">
+      <div className="tsp blog-add-form">
+        <div className=" tsp blog-add">
         <div className="input-card">
           <label htmlFor="Image">Image url</label>
           <input
@@ -82,13 +82,13 @@ export default function BlogAdd() {
             rows="5"
           ></textarea>
         </div>
-        <div className="input-button">
+        <div className="tsp input-button">
           <button onClick={inputData}>add Blog</button>
         </div>
 
         <br />
         <br />
-        <div>
+        <div className="tsp blog-add-msg">
           {dataAdded ? "Blog added successfully" : "Add blog data in the form"}
         </div>
       </div>

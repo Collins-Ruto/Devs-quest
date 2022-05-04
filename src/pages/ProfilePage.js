@@ -11,11 +11,11 @@ import MainNavigation from '../components/Navigation';
 export default function ProfilePage() {
 
   return (
-    <div>
+    <div className="tsp">
       <MainNavigation />
-      <div className="port-cont">
+      <div className="port-cont tsp">
       <div className="port-card">
-        <div className="port-title">
+        <div className="port-title ">
           <h3>
             <i className="fa fa-linkedin" aria-hidden="true"></i> LinkedIn
           </h3>

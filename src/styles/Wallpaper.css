@@ -132,6 +132,7 @@
   font-size: 1.3rem;
   background-color: rgba(7, 7, 10, 0.637);
   padding-bottom: 5px;
+  height: 4rem;
 }
 .wall-nav-logo {
   margin-left: .3rem;
@@ -237,11 +238,12 @@
     min-width:8rem;
   }
   .wall-nav-search {
-    width: 70%;
+    width: 60%;
     padding: 0px;
+    min-width: 11rem;
   }
   .wall-nav-search input {
-    width: 90%;
+    width: 95%;
     height: 1.8rem;
     border-radius: 0.2rem;
     font-size: 1rem;

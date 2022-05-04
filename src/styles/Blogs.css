@@ -1,3 +1,6 @@
+.tsp {
+  background: transparent;
+}
 .blog-container {
   display: flex;
   flex-wrap: wrap;
@@ -51,26 +54,18 @@
   transform: scale(1.05);
 }
 
-@media (max-width: 600px) {
-  .blog-container .blog-add {
-    margin: 100% auto auto 69%;
-    min-width: 8.1rem;
-  }
-  .blog-container {
-    margin-left: auto;
-    align-items: center;
-  }
-}
-
 .blog-add-form {
   justify-content: center;
   margin: 3.5rem 0 0 10rem;
-  border: 1px solid blue;
 }
 .blog-add {
   max-width: 35rem;
   margin: 0 auto;
   padding-top: 2rem;
+  border: 1px solid gray;
+  justify-content: center;
+  border-radius: 0.5rem;
+  background: rgba(89, 167, 17, 0.158);
 }
 .blog-add input,
 textarea {
@@ -84,21 +79,45 @@ textarea {
   display: flex;
   flex-direction: column;
   max-width: 78%;
-  margin: 2rem 2rem;
+  margin: 2rem 4rem;
+  background: transparent;
 }
 .input-card label {
   text-align: justify;
   padding: 0.5rem;
+  background: transparent;
 }
-.input-button {
-  display: flex;
-  max-width: 90%;
-  justify-content: flex-end;
-}
+
 .input-button button {
   background-color: green;
   cursor: pointer;
+  margin: 0 auto;
 }
 .input-button button:hover {
   transform: scale(0.97);
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .blog-add {
+    margin-top: 1rem;
+    padding: 1rem 0rem;
+  }
+  .blog-container {
+    margin-left: auto;
+    align-items: center;
+  }
+  .blog-add-form {
+    justify-content: center;
+    margin: 3.5rem 0 0 0rem;
+    padding: 2rem 2rem;
+  }
+  .input-card {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0.5rem auto 2rem auto;
+    max-width: none;
+  }
 }

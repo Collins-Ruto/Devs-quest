@@ -101,6 +101,10 @@
 .mail-sub {
     margin: .5rem;
     background:transparent;
+    justify-content: center;
+    max-width: 27rem;
+    margin: 0 auto;
+    padding:0 1rem;
 }
 .mail-sub input, button {
     padding: .6rem 1rem;
@@ -115,14 +119,12 @@
 .mail-sub input {
     width: 100%;
     min-width: 10rem;
-    border: 2px solid red;
     margin-bottom: .5rem;
-    max-width: 20rem;
     margin: .5rem auto;
 }
 .mail-sub button {
     margin: 0 auto;
     width: 100%;
-    max-width: 20rem;
+    /* max-width: 20rem; */
 }
 }
