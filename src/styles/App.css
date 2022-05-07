@@ -5,6 +5,7 @@
     background-image: url(../images/homebg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    /* background-position: center; */
     height : 100%;
     padding-top: .01rem;
 }

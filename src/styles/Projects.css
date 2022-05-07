@@ -1,23 +1,29 @@
 
+.tsp {
+    background-color: transparent;
+}
 .pro-page {
     justify-content: center;
-    /* padding-top: 1rem; */
     margin: 3.5rem 0 0 10rem;
+    padding-top: .1rem;
+}
+.pro-page h1 {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .pro-cont {
     display: flex;
     flex-wrap: wrap;
-    border-top: 1px solid;
     justify-content: center;
-    
 }
 .pro-card {
-    border: 1px solid;
+    border: 1px solid gray;
     width: 65%;
     max-width: 28rem;
     padding: .8rem;
     border-radius: .5rem;
     margin: 1rem auto;
+    background-color:rgba(26, 51, 37, 0.61);
+    min-height: 14rem;
 }
 .pro-link {
     text-decoration: none;
@@ -26,17 +32,21 @@
 .pro-link i {
     font-size: 1.8rem;
     color: rgba(127, 255, 212, 0.753);
+    background-color: transparent;
 }
 .pro-link h2 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin-top: .4rem;
     color: aqua;
+    background-color: transparent;
 }
 .pro-link p {
     text-align: justify;
+    background-color: transparent;
 }
 .pro-link i:hover, h2:hover {
     transform: scale(1.03);
+    background-color: transparent;
 }
 @media (max-width:600px) {
     .pro-page {

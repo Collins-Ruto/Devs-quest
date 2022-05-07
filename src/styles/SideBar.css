@@ -16,15 +16,11 @@
     font-family:Arial, Helvetica, sans-serif;
     padding: .5rem 0;
     background: transparent;
-}
-
-.bar li:hover {
-    transform: scale(1.05);
-    color: aqua;
+    transition: background 350ms;
 }
 
 .sbli {
-    color: aliceblue;
+    color: rgb(194, 240, 240);
     text-decoration: none;
     background: transparent
 }
@@ -35,6 +31,29 @@
     color: aqua;
 }
 
+.bar li:hover {
+    transform: scale(1.05);
+    color: aqua;
+    background: rgba(137, 228, 228, 0.171);
+    padding: .5rem;
+    border-radius: .3rem;
+}
+
+.bar li::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background:rgb(64, 200, 224);
+    transition: width 350ms;
+}
+.bar li:hover::after {
+    width: 100%;
+}
+.bar li:active::after {
+    width: 70%;
+}
+
 @media  (max-width: 600px) {
     .bar[data-visible="false"] {
         display: none;
@@ -43,7 +62,6 @@
     .bar[data-visible="true"] {
         display: block;
         background: rgba(0, 0, 0, 0.726);
-        z-index: 1;
     }
     
 }

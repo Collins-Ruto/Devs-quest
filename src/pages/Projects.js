@@ -5,11 +5,11 @@ import '../styles/Projects.css'
 
 export default function Projects() {
   return (
-    <div>
+    <div className="tsp">
       <MainNavigation />
       <div className="pro-page tsp">
-        <h1>My Projects</h1>
-        <div className="pro-cont">
+        <h1 className="tsp" >My Projects</h1>
+        <div className="pro-cont tsp">
           <div className="pro-card">
             <Link className="pro-link" to="/projects/boxes">
               <i className="fas fa-boxes"></i>

@@ -14,7 +14,7 @@ function MainNavigation() {
   console.log("toogle " + burger);
   return (
     <div className="navigation tsp">
-      <div className="stick-nav tsp">
+      <div className="stick-nav">
         
         <div className="logo tsp">
           <img src={logo} alt=""></img>
