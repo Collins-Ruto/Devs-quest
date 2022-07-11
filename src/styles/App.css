@@ -1,10 +1,10 @@
 .App {
     text-align: center;
-    background-color: #819cdb;
+    background-color: #001e3c;
     color: whitesmoke;
-    background-image: url(../images/homebg.jpg);
+    /* background-image: url(../images/homebg.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
     /* background-position: center; */
     height : 100%;
     padding-top: .01rem;

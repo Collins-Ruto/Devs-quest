@@ -45,7 +45,7 @@ export default function BoxView() {
       <div className="boxCard">
         <h4>{boxInfo}</h4>
       </div>
-    );
+    )
   }
   return (
   <div>
