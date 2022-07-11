@@ -12,7 +12,11 @@
 /build
 /client/build
 # files
+<<<<<<< HEAD
 # /src/images
+=======
+#/src/images
+>>>>>>> 6e7f081573a9d5d3c7f08e83c017e03f706772bd
 
 # misc
 .DS_Store
