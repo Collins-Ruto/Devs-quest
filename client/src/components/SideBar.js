@@ -28,7 +28,7 @@ export default function SideBar(props) {
       <div
         onBlur={blurToggle}
         onClick={blurToggle}
-        className="bar tsp"
+        className="bar "
         id="bar"
         data-visible={toggle}
       >
@@ -36,6 +36,11 @@ export default function SideBar(props) {
           <Link className="sbli" to="/">
             <li>
               <i className="fas fa-home"></i> Home
+            </li>
+          </Link>
+          <Link className="sbli" to="/blogs">
+            <li>
+            <i className="fas fa-book-open    "></i> Blogs
             </li>
           </Link>
           <Link className="sbli" to="/projects">

@@ -9,15 +9,10 @@
     justify-content: space-between;
     display: flex;
     align-items: center;
-    background: rgba(0, 0, 0, 0.158);
+    background: rgba(4, 6, 13, 0.938);
     max-height: 3.5rem;
 }
 
-.navBar {
-    display: flex;
-    text-align: center;
-    border-radius: .3rem;
-}
 .nav-burger {
     display: none;
 }
@@ -32,57 +27,105 @@
     background: transparent;
 }
 
+.logo2 {display:none;}
+.search-box {
+    width: 25%;
+    min-width: 15rem;
+}
+.search-box i {
+    position: relative;
+    cursor: pointer;
+    left:-2rem;
+    margin-right: -2rem;
+    font-size: 1.3rem;
+    bottom: -.2rem;
+}
+.navBar {
+    min-width:12rem;
+}
+
+.search-box input {
+    width: 100%;
+    height:2.4rem;
+    padding: .7rem;
+    border-radius: .25rem;
+    border: 1px solid;
+}
 .navList {
     list-style: none;
     display: flex;
-    text-align: center;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 .5rem;
 }
 
 .navList li {
     background: transparent;
+    border-radius: .2rem;
+    float: right;
 }
 .ls {
     text-decoration: none !important;
-    margin-right: 2rem;
     font-size: 1.3rem;
-    text-decoration: none;
     color: #61dafb;
-    padding: 0;
-    background: transparent;
-    transition: color 150ms;
-    transition: background 150ms;
-    transition: padding 150ms;
+    padding: .5rem;
+    background: rgba(114, 195, 206, 0.301);
+    border: 1px solid;
+    border-radius: .2rem;
+    margin-left: .5rem;
 }
 .ls:hover {
-    color: rgb(191, 235, 232);
-    transform: scale(1.1);
-    padding:.5rem;
-    background: rgba(126, 216, 228, 0.301);
-    border-radius: .2rem
+    background: rgb(225, 244, 243);
 }
 li i {
     margin-right: .5rem;
     background: transparent;
 }
 
-@media (max-width: 650px) {
-    .ls {
-        margin-left: -.7rem;
-    }
-}
-@media (max-width: 650px) {
-    .ls {
-        margin-left: -.7rem;
-    }
-}
 @media (max-width: 805px) {
     .navList .ls i {
         display: none;
     }
 }
-@media (max-width: 600px) {
-    .navBar {
+@media (max-width: 800px) {
+    .nav-info {
+        display: flex;
+        align-items: center
+    }
+    .logo {
+        display:none;}
+    .logo2 {
+        display:flex;
+        width:10%;
+        min-width:3rem;
+    }
+    .logo2 img {
+        width: 100%;
+        max-width:3rem;
+    }
+    .stick-nav input{
         display: none;
+    }
+    .search-box {
+        width:0rem;
+        min-width:0rem;
+        justify-self: end;
+        float: right;
+        margin-left: auto;
+    }
+    .search-box i{
+        font-size: 1.5rem;
+    }
+    .navBar {
+        display: flex;
+        justify-content:flex-end;
+        max-width: 45%;
+        min-width: 8.5rem;
+    }
+    .navBar .ls {
+        font-size: 1rem;
+        color: #61dafb;
+        padding: .4rem;
     }
     .App-header {
         display: flex;
@@ -91,16 +134,15 @@ li i {
     .nav-burger {
         display: block;
         background: transparent;
+        cursor: pointer;
+        width:43%;
+        margin-right: .4rem;
     }
     .nav-burger i {
         font-size: 2rem;
-        margin: 1rem 2rem;
+        margin: 1rem 1rem;
     }
     .nav-burger i:active{
         transform: rotate(90deg);
-    }
-
-    .logo {
-        width: 6.3rem;
     }
 }

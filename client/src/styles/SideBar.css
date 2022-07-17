@@ -1,9 +1,10 @@
 .bar {
-    width: 10rem;
+    width: 15%;
+    min-width:12rem;
     position: fixed;
     height: 100%;
-    border-right: 2px solid lightgreen;
     padding-left: .5rem;
+    background:rgb(19, 19, 23);
 }
 .bar ul {
     margin: 2rem 0rem 0 -2rem;
@@ -11,18 +12,26 @@
 }
 .bar li {
     list-style: none;
-    float: left;
-    margin: .8rem auto;
+    align-self: left;
+    margin: .8rem .2rem;
     font-family:Arial, Helvetica, sans-serif;
     padding: .5rem 0;
     background: transparent;
     transition: background 350ms;
 }
 
+.bar li i {
+    margin-left: .5rem;
+}
+
 .sbli {
     color: rgb(194, 240, 240);
     text-decoration: none;
-    background: transparent
+    background: transparent;
+    width: 90%;
+    float: left;
+    text-align: justify;
+    
 }
 
 .bar i {
@@ -32,10 +41,9 @@
 }
 
 .bar li:hover {
-    transform: scale(1.05);
+    transform: scale(1.02);
     color: aqua;
     background: rgba(137, 228, 228, 0.171);
-    padding: .5rem;
     border-radius: .3rem;
 }
 
@@ -47,21 +55,18 @@
     background:rgb(64, 200, 224);
     transition: width 350ms;
 }
-.bar li:hover::after {
-    width: 100%;
-}
+
 .bar li:active::after {
     width: 70%;
 }
 
-@media  (max-width: 600px) {
+@media  (max-width: 800px) {
     .bar[data-visible="false"] {
         display: none;
     }
     
     .bar[data-visible="true"] {
         display: block;
-        background: rgba(0, 0, 0, 0.726);
     }
     
 }

@@ -1,11 +1,11 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import '../styles/Blogs.css'
-import BlogData from "../components/BlogData"
 import MainNavigation from "../components/Navigation";
 
 export default function Blogs() {
   
+  const [articles, setArticles] = useState([])
     
     // const blogData = [
     //   {
@@ -41,15 +41,33 @@ export default function Blogs() {
     //       "In an exclusive interview, the military branch second in command talks about junk in orbit, cyberattacks, satellite vulnerabilities, and Russia's war in Ukraine.",
     //   },
     // ];
-   const blogCard = BlogData.map((blogs) => {
+   
+  useEffect(() => {
+    fetch("https://dev.to/api/articles")
+      .then((res) => res.json())
+      .then((data) => setArticles(data));
+    return () => {};
+  }, [])
+  
+  console.log(articles)
+   
+    const blogCard = articles.map((blogs) => {
        console.log(blogs.image);
-       return(
-           <div className="blog-card" key={blogs.id}>
-               <img src={blogs.image} alt=""></img>
-               <h1>{blogs.title}</h1>
-               <p>{blogs.about}</p>
-           </div>
-       )
+       const altUrl =
+         "https://cdn.dribbble.com/users/1059085/screenshots/10182795/media/1e69c8119b2a09a3b405f7a47b9b3adb.jpg";
+       return (
+         <div className="blog-card" key={blogs.id}>
+           <img
+             src={blogs.cover_image || altUrl}
+             alt={"devsquet "+blogs.title}
+           ></img>
+           <h1>{blogs.title}</h1>
+           <p>{blogs.description}</p>
+           <a href={blogs.url} target="_blank" rel="noreferrer">
+             <button>read more</button>
+           </a>
+         </div>
+       );
    } )
   return (
     <div>

@@ -1,8 +1,11 @@
 .main-home {
-    margin: 3.5rem auto auto 10rem;
+    margin: 3.5rem auto auto 15%;
     justify-content: center;
     padding-bottom:6rem;
-    background: transparent;
+    /* background: transparent; */
+    height: 100vh;
+    background-image: url(../images/cube.jpeg);;
+    background-size: cover;
 }
 .welcome-txt{
     background: transparent;
@@ -23,7 +26,7 @@
     text-align: left;
 }
 .main-intro h3 {
-    color: rgb(163, 160, 160);
+    color: rgb(235, 252, 255);
     margin-top: -.5rem;
     background:transparent;
 }
@@ -75,6 +78,17 @@
         max-width: 89%;
     }
 }
+@media (max-width: 1000px) {
+    .main-home {
+        margin-left:10rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .main-home {
+        margin-left:0;
+    }
+}
 
         /* Mobile first home page */
 
@@ -92,11 +106,14 @@
     font-size: 3rem;
     width: 90%;
     margin: 0 auto;
+    text-align: center
 }
 .main-intro h3 {
     background:transparent;
     width: 90%;
     margin: 2rem auto;
+    text-align: center;
+    color: rgba(24, 23, 21, 0.643);
 }
 .mail-sub {
     margin: .5rem;
