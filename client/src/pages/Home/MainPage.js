@@ -1,11 +1,11 @@
 import React from 'react'
-import MainNavigation from '../components/Navigation'
-import '../styles/MainPage.css'
+import HomeNav from '../../pages/Home/HomeNav'
+import '../../styles/Home/HomeMain.css'
 
 export default function MainPage() {
   return (
     <div className='trans'>
-      <MainNavigation />
+      <HomeNav />
         <section className='main-home'>
           <div className='main-intro'>
             <div className='welcome-txt'>

@@ -7,7 +7,7 @@ import ProfilePage from "./pages/ProfilePage";
 import Games from "./pages/Games";
 import Projects from "./pages/Projects";
 import Challenges from "./pages/Challenges";
-import MainPage from "./pages/MainPage";
+import MainPage from "./pages/Home/MainPage";
 import Blogs from "./pages/Blogs";
 import BlogAdd from "./pages/BlogAdd";
 import Calculator from "./pages/Calculator";
