@@ -127,3 +127,37 @@
     /* max-width: 20rem; */
 }
 }
+
+.about-dev {
+    height: 100vh;
+    background-color: #141931;
+    padding:2rem 1rem;
+    display: grid;
+    align-items: center;
+}
+.about-text {
+    max-width:50rem;
+    margin: 7%;
+}
+.about-text h1 {
+    text-align: start;
+}
+.about-text h3 {
+    margin-top: 2rem;
+    text-align: justify;
+    width: 90%;
+}
+.about-img {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+@media (max-width: 800px) {
+    .about-info {
+        grid-template-columns: 100%;
+    }
+    .about-img {
+        display:none;
+    }
+}
+
