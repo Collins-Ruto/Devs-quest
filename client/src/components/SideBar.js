@@ -40,7 +40,7 @@ export default function SideBar(props) {
           </Link>
           <Link className="sbli" to="/blogs">
             <li>
-            <i className="fas fa-book-open    "></i> Blogs
+            <i className="fas fa-book-open"></i> Blogs
             </li>
           </Link>
           <Link className="sbli" to="/projects">
@@ -69,7 +69,7 @@ export default function SideBar(props) {
 
           <Link className="sbli" to="/challenges">
             <li>
-              <i className="fas fa-trophy    "></i> Challenges
+              <i className="fas fa-trophy"></i> Challenges
             </li>
           </Link>
 
@@ -81,7 +81,7 @@ export default function SideBar(props) {
 
           <Link className="sbli" to="/account">
             <li>
-              <i className="fas fa-portrait    "></i> Account
+              <i className="fas fa-portrait"></i> Account
             </li>
           </Link>
         </ul>

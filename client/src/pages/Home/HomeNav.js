@@ -5,14 +5,13 @@ import logo2 from "../../images/devsq2.png";
 import "../../styles/Home/HomeNav.css";
 import SideBar from "../../components/SideBar";
 import "../../styles/Home/HomeSide.css";
+import {Dropdown} from "flowbite-react";
 
 function MainNavigation() {
   const [burger, setBurger] = React.useState(false);
   function switchBurger() {
     setBurger(!burger);
   }
-
-  console.log("toogle " + burger);
   return (
     <div className="navigation tsp">
       <div className="homeStick-nav">
@@ -52,17 +51,20 @@ function MainNavigation() {
                 </Link>
               </li>
               <li>
-                <Link className="link tsp" to="/resources">
-                  Resources
-                </Link>
-              </li>
-              <li>
-                {/* <Dropdown label="Dropdown button">
-                  <Dropdown.Item>Dashboard</Dropdown.Item>
-                  <Dropdown.Item>Settings</Dropdown.Item>
-                  <Dropdown.Item>Earnings</Dropdown.Item>
-                  <Dropdown.Item>Sign out</Dropdown.Item>
-                </Dropdown> */}
+                <Dropdown label="More" className="tsp border-0 text-white">
+                  <Dropdown.Item>
+                    <Link to="">GitHub</Link>
+                  </Dropdown.Item>
+                  <Dropdown.Item>
+                    <Link to="">Hackathons</Link>
+                  </Dropdown.Item>
+                  <Dropdown.Item>
+                    <Link to="">Games</Link>
+                  </Dropdown.Item>
+                  <Dropdown.Item>
+                    <Link to="">Settings</Link>
+                  </Dropdown.Item>
+                </Dropdown>
               </li>
             </ul>
           </div>

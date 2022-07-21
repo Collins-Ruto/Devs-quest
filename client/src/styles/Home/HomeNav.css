@@ -22,7 +22,7 @@
     display: none;
 }
 .logo {
-    width:15%;
+    width:13%;
     align-items: center;
     min-width: 12rem;
     margin-left: .5rem;
@@ -46,7 +46,7 @@
     bottom: -.2rem;
 }
 .navBar {
-    min-width:12rem;
+    min-width:13rem;
 }
 
 .search-box input {
@@ -59,7 +59,6 @@
     background: rgba(124, 121, 121, 0.217);
 }
 .nav-items {
-    /* margin-right: auto; */
     float: left;
     display:flex;
 }
@@ -149,7 +148,7 @@ li i {
 }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 880px) {
     .nav-items {
         display: none;
     }
