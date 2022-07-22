@@ -7,8 +7,8 @@ import SideBar from "../../components/SideBar";
 import "../../styles/Home/HomeSide.css";
 import {Dropdown} from "flowbite-react";
 
-function MainNavigation() {
-  const [burger, setBurger] = React.useState(false);
+function MainNavigation({sidebarOn}) {
+  const [burger, setBurger] = React.useState(sidebarOn);
   function switchBurger() {
     setBurger(!burger);
   }
@@ -53,16 +53,16 @@ function MainNavigation() {
               <li>
                 <Dropdown label="More" className="tsp border-0 text-white">
                   <Dropdown.Item>
-                    <Link to="">GitHub</Link>
+                    <a href="https://github.com/collins-ruto">GitHub</a>
                   </Dropdown.Item>
                   <Dropdown.Item>
-                    <Link to="">Hackathons</Link>
+                    <Link to="/challenges">Hackathons</Link>
                   </Dropdown.Item>
                   <Dropdown.Item>
-                    <Link to="">Games</Link>
+                    <Link to="/games">Games</Link>
                   </Dropdown.Item>
                   <Dropdown.Item>
-                    <Link to="">Settings</Link>
+                    <Link to="/settings">Settings</Link>
                   </Dropdown.Item>
                 </Dropdown>
               </li>

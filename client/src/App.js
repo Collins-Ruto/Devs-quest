@@ -8,11 +8,12 @@ import Games from "./pages/Games";
 import Projects from "./pages/Projects";
 import Challenges from "./pages/Challenges";
 import MainPage from "./pages/Home/MainPage";
-import Blogs from "./pages/Blogs";
+import Blogs from "./pages/Blogs/Blogs";
 import BlogAdd from "./pages/BlogAdd";
 import Calculator from "./pages/Calculator";
 import Chats from "./pages/Chats";
 import Wallpaper from "./pages/Wallpaper";
+import ForumMain from "./pages/forum/ForumMain";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Routes>
           <Route path="/" element={<MainPage />}></Route>
           <Route path="/blogs" element={<Blogs />}></Route>
+          <Route path="/forum" element={<ForumMain />}></Route>
           <Route path="/add-blog" element={<BlogAdd />}></Route>
           <Route path="/card" element={<CardPage />}></Route>
           <Route path="/portfolio" element={<ProfilePage />}></Route>

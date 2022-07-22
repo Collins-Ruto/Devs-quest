@@ -128,9 +128,9 @@
 }
 }
 
-.about-dev {
+.about-dev, .hacks-page {
     height: 100vh;
-    background-color: #141931;
+    background-color: #040D21;
     padding:2rem 1rem;
     display: grid;
     align-items: center;
@@ -153,11 +153,18 @@
     align-items: center;
 }
 @media (max-width: 800px) {
-    .about-info {
-        grid-template-columns: 100%;
-    }
     .about-img {
         display:none;
     }
+    .about-info {
+        grid-template-columns: 100%;
+        display:block;
+    }
 }
 
+.hacks-page, .footer {
+    background-color: #040D21;
+}
+.hacks-page .text-center {
+    margin:0 auto
+}

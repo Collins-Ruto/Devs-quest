@@ -35,53 +35,63 @@ export default function SideBar(props) {
         <ul>
           <Link className="sbli" to="/">
             <li>
-              <i className="fas fa-home"></i> Home
+              <i className="fas fa-home"></i>Home
             </li>
           </Link>
           <Link className="sbli" to="/blogs">
             <li>
-            <i className="fas fa-book-open"></i> Blogs
+            <i className="fas fa-book-open"></i>Blogs
             </li>
           </Link>
           <Link className="sbli" to="/projects">
             <li>
-              <i className="fas fa-project-diagram"></i> Projects
+              <i className="fas fa-project-diagram"></i>Projects
             </li>
           </Link>
 
           <Link className="sbli" to="/chats">
             <li>
-              <i className="fas fa-inbox"></i> Chats
+              <i className="fas fa-inbox"></i>Chats
             </li>
           </Link>
           <br />
           <Link className="sbli" to="/games">
             <li>
-              <i className="fas fa-gamepad"></i> Games
+              <i className="fas fa-gamepad"></i>Games
             </li>
           </Link>
 
           <Link className="sbli" to="/collabs">
             <li>
-              <i className="fa fa-handshake-o" aria-hidden="true"></i> Collabs
+              <i className="fa fa-handshake-o" aria-hidden="true"></i>Collabs
             </li>
           </Link>
 
           <Link className="sbli" to="/challenges">
             <li>
-              <i className="fas fa-trophy"></i> Challenges
+              <i className="fas fa-trophy"></i>Hackathons
             </li>
           </Link>
 
           <Link className="sbli" to="/resources">
             <li>
-              <i className="fa fa-book" aria-hidden="true"></i> Resources
+              <i className="fa fa-book" aria-hidden="true"></i>Resources
             </li>
           </Link>
 
           <Link className="sbli" to="/account">
             <li>
-              <i className="fas fa-portrait"></i> Account
+              <i className="fas fa-portrait"></i>Bookmarks
+            </li>
+          </Link>
+          <Link className="sbli" to="/account">
+            <li>
+              <i className="fas fa-portrait"></i>Contact
+            </li>
+          </Link>
+          <Link className="sbli" to="/account">
+            <li>
+              <i className="fas fa-portrait"></i>FAQ
             </li>
           </Link>
         </ul>
