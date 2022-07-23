@@ -6,10 +6,10 @@ import CardPage from "./pages/Card";
 import ProfilePage from "./pages/ProfilePage";
 import Games from "./pages/Games";
 import Projects from "./pages/Projects";
-import Challenges from "./pages/Challenges";
+import Hackathon from "./pages/hacks/Hackathon";
 import MainPage from "./pages/Home/MainPage";
 import Blogs from "./pages/Blogs/Blogs";
-import BlogAdd from "./pages/BlogAdd";
+import BlogAdd from "./pages/Blogs/BlogAdd";
 import Calculator from "./pages/Calculator";
 import Chats from "./pages/Chats";
 import Wallpaper from "./pages/Wallpaper";
@@ -34,7 +34,7 @@ function App() {
           <Route path="/games" element={<Games />}></Route>
           <Route path="/chats" element={<Chats />}></Route>
           <Route path="/projects" element={<Projects />}></Route>
-          <Route path="/challenges" element={<Challenges />}></Route>
+          <Route path="/hackathons" element={<Hackathon />}></Route>
         </Routes>
       </div>
     </div>

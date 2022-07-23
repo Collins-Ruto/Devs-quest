@@ -1,7 +1,7 @@
 import React from "react";
-import "../styles/Blogs.css";
-import blogsData from "../components/BlogData";
-import MainNavigation from "../components/Navigation";
+import "../../styles/Blogs.css";
+import blogsData from "../../components/BlogData";
+import MainNavigation from "../../components/Navigation";
 
 export default function BlogAdd() {
   

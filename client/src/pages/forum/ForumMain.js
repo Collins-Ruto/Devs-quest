@@ -5,10 +5,18 @@ import List from "./List";
 import ListItem from "./ListItem";
 import HomeNav from "../../pages/Home/HomeNav";
 import "./styles/ForumMain.css";
+import { useSelector, useDispatch } from "react-redux";
+import { getForums, createForum } from "../../actions/forums";
 
 export default function ForumMain() {
-  const [collabs, setCollabs] = useState([]);
-  useEffect(() => {}, []);
+  // const [collabs, setCollabs] = useState([]);
+  const dispatch = useDispatch();
+  const forums = useSelector((state) => state.forums.result);
+  console.log(forums)
+
+  useEffect(() => {
+    dispatch(getForums())
+  }, []);
 
   return (
     <div className="forum-page">
@@ -23,8 +31,8 @@ export default function ForumMain() {
             <NavItem href="/picks">your projects</NavItem>
           </Nav>
           <List>
-            {collabs.map((movie) => (
-              <ListItem key={movie.id} movie={movie} />
+            {forums?.map((forum) => (
+              <ListItem key={forum._id} forum={forum} />
             ))}
           </List>
         </div>

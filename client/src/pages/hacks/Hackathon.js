@@ -1,12 +1,12 @@
 import React from 'react'
-import MainNavigation from '../components/Navigation'
+import MainNavigation from '../../components/Navigation'
 
-export default function Challenges() {
+export default function Hackathon() {
   return (
     <div>
       <MainNavigation />
       <div>
-         Challenges
+         Hackathon
       </div>
       </div>
   )
