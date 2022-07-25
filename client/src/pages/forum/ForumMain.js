@@ -15,7 +15,7 @@ export default function ForumMain() {
   console.log(forums)
 
   useEffect(() => {
-    dispatch(getForums())
+    dispatch(getForums("forums"))
   }, []);
 
   return (

@@ -1,6 +1,6 @@
 import * as api from "../api";
 
-export const getForums = () => async (dispatch) => {
+export const getForums = (type) => async (dispatch) => {
   try {
     const { data } = await api.getForums();
 

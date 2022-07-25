@@ -13,7 +13,7 @@ const router = express.Router();
 router.get("/", getForums);
 router.get("/id/:id", getForum);
 router.post("/", createForum);
-router.put("/favorites", updateForum);
-router.delete("/favorites", deleteForum);
+router.put("/", updateForum);
+router.delete("/", deleteForum);
 
 export default router;

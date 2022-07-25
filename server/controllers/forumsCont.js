@@ -23,13 +23,13 @@ export const getForum = async (req, res) => {
     }
 };
 export const createForum = async (req, res) => {
-    const { author, title, content, date, email, image, author_image } = req.body;
+    const { author, title, content, date, email, image, author_image, tags, likes } = req.body;
 
     try {
       const result = await ForumData.create({
         author,title,
-        content,
-        date,email,
+        content, likes,
+        date,email, tags,
         image,author_image,
       });
 
@@ -51,7 +51,7 @@ export const deleteForum = async (req, res) => {
     const _id = ObjectId(id);
 
     try {
-      const result = await ForumData.delete(_id);
+      const result = await ForumData.deleteOne(_id);
 
       res.status(200).json({ result: result });
     } catch (error) {
